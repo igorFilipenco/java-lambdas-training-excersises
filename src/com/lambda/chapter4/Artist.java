@@ -23,7 +23,11 @@ public final class Artist {
     private String name;
     private List<Artist> members;
     private String nationality;
-    
+
+    public Artist(String name) {
+        this(name, Collections.emptyList(), "");
+    }
+
     public Artist(String name, String nationality) {
         this(name, Collections.emptyList(), nationality);
     }
